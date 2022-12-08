@@ -1,30 +1,91 @@
 <script>
 	import * as prismic from '@prismicio/helpers';
-	import { gsap } from "gsap";
+	import gsap from 'gsap';
+	import {ScrollTrigger} from "gsap/dist/ScrollTrigger";    
 	import { onMount } from "svelte";
 
 	export let data;
 	let { document } = data;
+	gsap.registerPlugin(ScrollTrigger)
 
 	onMount(() => {
-		gsap.from("h1 span", { delay: .5, yPercent: 100, ease: "back.out", duration: 1.5 })
-		gsap.from(".story__content p:not(.block-img)", {
-			duration: 2,
-			scale: 0.5, 
-			opacity: 0, 
-			delay: 1.5, 
-			stagger: 0.2,
+		gsap.from("h1 span", { 
+			delay: .25, 
+			yPercent: 100, 
 			ease: "back.out", 
-			force3D: true
+			duration: 1.5 
 		});
-		gsap.from(".block-img", {
-			duration: 2,
-			scale: 0.5, 
-			opacity: 0, 
-			delay: 2, 
-			stagger: 0.2,
-			ease: "back.out", 
-			force3D: true
+		
+		gsap.from('.block-img:nth-child(2)', {
+			scrollTrigger: {
+				trigger: '.block-img:nth-child(2)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .75,
+			x: 65,
+			opacity: 0,
+			duration: 1.25,
+			// ease: "back.out"
+		});
+
+		gsap.from('.story__content p:not(.block-img):nth-child(1)', {
+			scrollTrigger: {
+				trigger: '.story__content p:not(.block-img):nth-child(1)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .5,
+			x: -65,
+			opacity: 0,
+			duration: 1.25,
+			// ease: "back.out"
+		});
+
+		gsap.from('.block-img:nth-child(3)', {
+			scrollTrigger: {
+				trigger: '.block-img:nth-child(3)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .20,
+			x: -65,
+			opacity: 0,
+			duration: 1.25,
+			// ease: "back.out"
+		});
+
+		gsap.from('.story__content p:not(.block-img):nth-child(4)', {
+			scrollTrigger: {
+				trigger: '.story__content p:not(.block-img):nth-child(4)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .2,
+			x: 65,
+			opacity: 0,
+			duration: 1.25,
+			// ease: "back.out"
+		});
+
+		gsap.from('.block-img:nth-child(5)', {
+			scrollTrigger: {
+				trigger: '.block-img:nth-child(5)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .2,
+			x: -65,
+			opacity: 0,
+			duration: 1.25,
+			// ease: "back.out"
+		});
+
+		gsap.from('.block-img:nth-child(6)', {
+			scrollTrigger: {
+				trigger: '.block-img:nth-child(6)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .2,
+			x: 65,
+			opacity: 0,
+			duration: 1.25,
+			// ease: "back.out"
 		});
 	});
 </script>
@@ -51,7 +112,7 @@
 	}
 
 	.story__content {
-		padding: 3em 7em;
+		padding: 3em 7em 5em 8em;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
