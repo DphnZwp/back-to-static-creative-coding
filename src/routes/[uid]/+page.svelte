@@ -109,7 +109,6 @@
 		padding: 3em 7em 5em 8em;
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
-		align-items: center;
 		gap: 5em;
 	}
 </style>
