@@ -15,17 +15,6 @@
 			ease: "back.out", 
 			duration: 1.5 
 		});
-		
-		gsap.from('.block-img:nth-child(2)', {
-			scrollTrigger: {
-				trigger: '.block-img:nth-child(2)',
-				toggleActions:"restart none restart restart"
-			},
-			delay: .75,
-			x: 65,
-			opacity: 0,
-			duration: 1,
-		});
 
 		gsap.from('.story__content p:not(.block-img):nth-child(1)', {
 			scrollTrigger: {
@@ -37,16 +26,27 @@
 			opacity: 0,
 			duration: 1,
 		});
+		
+		gsap.from('.block-img:nth-child(2)', {
+			scrollTrigger: {
+				trigger: '.block-img:nth-child(2)',
+				toggleActions:"restart none restart restart"
+			},
+			delay: .2,
+			x: 65,
+			opacity: 0,
+			duration: 1,
+		});
 
 		gsap.from('.block-img:nth-child(3)', {
 			scrollTrigger: {
 				trigger: '.block-img:nth-child(3)',
 				toggleActions:"restart none restart restart"
 			},
-			delay: .20,
+			delay: .2,
 			x: -65,
 			opacity: 0,
-			duration: 1.25,
+			duration: 1,
 		});
 
 		gsap.from('.story__content p:not(.block-img):nth-child(4)', {
