@@ -24,8 +24,7 @@
 			delay: .75,
 			x: 65,
 			opacity: 0,
-			duration: 1.25,
-			// ease: "back.out"
+			duration: 1,
 		});
 
 		gsap.from('.story__content p:not(.block-img):nth-child(1)', {
@@ -36,8 +35,7 @@
 			delay: .5,
 			x: -65,
 			opacity: 0,
-			duration: 1.25,
-			// ease: "back.out"
+			duration: 1,
 		});
 
 		gsap.from('.block-img:nth-child(3)', {
@@ -49,7 +47,6 @@
 			x: -65,
 			opacity: 0,
 			duration: 1.25,
-			// ease: "back.out"
 		});
 
 		gsap.from('.story__content p:not(.block-img):nth-child(4)', {
@@ -61,7 +58,6 @@
 			x: 65,
 			opacity: 0,
 			duration: 1.25,
-			// ease: "back.out"
 		});
 
 		gsap.from('.block-img:nth-child(5)', {
@@ -73,7 +69,6 @@
 			x: -65,
 			opacity: 0,
 			duration: 1.25,
-			// ease: "back.out"
 		});
 
 		gsap.from('.block-img:nth-child(6)', {
@@ -85,7 +80,6 @@
 			x: 65,
 			opacity: 0,
 			duration: 1.25,
-			// ease: "back.out"
 		});
 	});
 </script>
