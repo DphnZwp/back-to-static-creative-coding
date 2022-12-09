@@ -1,5 +1,12 @@
-<h1>Stories</h1>
-<a href="/spanish-migrant">Spanish migrant</a>
+<script>
+	export let data;
+  const stories = data.documents
+</script>
+
+<h1>Story links</h1>
+{#each stories as data}
+		<a href="/{data.uid}">{data.data.title}</a>
+{/each}
 
 <style>
 	a {
