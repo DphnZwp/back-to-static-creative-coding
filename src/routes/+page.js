@@ -1,6 +1,5 @@
 import { error } from '@sveltejs/kit'
-
-import createClient from '$lib/utils/prismicio'
+import createClient from '$lib/utils/prismicio.js'
 
 export async function load({ fetch, request }) {
   const client = createClient({ fetch, request })
@@ -10,7 +9,5 @@ export async function load({ fetch, request }) {
         return { 
           documents
         }
-    }
-
-    error(404, 'Not found')
+    } error(404, 'Not found')
 }
