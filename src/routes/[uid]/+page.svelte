@@ -85,7 +85,7 @@
 </script>
 
 <section class="story">
-	<h1 class="story-title">
+	<h1 class="story__title">
 		<span>
 			A Spanish migrant looking for greener pastures
 		</span>
@@ -101,7 +101,7 @@
 		padding-top: 5em;
 	}
 
-	h1 span {
+	.story__title span {
     display: block;
 	}
 
