@@ -1,6 +1,6 @@
 <script>
 	import * as prismic from '@prismicio/helpers';
-	import gsap from 'gsap/dist/gsap';
+	import gsap from 'gsap';
 	import {ScrollTrigger} from "gsap/dist/ScrollTrigger";    
 	import { onMount } from "svelte";
 

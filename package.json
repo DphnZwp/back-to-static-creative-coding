@@ -21,6 +21,7 @@
 	"dependencies": {
 		"@prismicio/client": "^6.7.1",
 		"@prismicio/helpers": "^2.3.6",
-		"gsap": "^3.11.3"
+		"gsap": "^3.11.3",
+		"ilojo-bar-components": "^1.1.0"
 	}
 }
