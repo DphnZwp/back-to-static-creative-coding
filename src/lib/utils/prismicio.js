@@ -1,6 +1,7 @@
 import * as prismic from '@prismicio/client'
-
 const repositoryName = 'lose-your-head-the-client-case'
+
+
 
 const createClient = ({request, fetch}) => {
     const clientOptions = {
