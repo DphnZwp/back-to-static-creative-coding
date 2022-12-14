@@ -16,9 +16,7 @@
 	</nav>
 </header>
 
-<main>
 	<slot />
-</main>
 
 <style>
 	li {
