@@ -3,11 +3,32 @@
 </script>
 
 <svelte:head>
-	<title>Ilojo Bar</title>
+	<title>Page transition on steroïds</title>
 	<!-- FONTS -->
-	<link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500;600;700&display=swap" rel="stylesheet">
 </svelte:head>
+
+<header>
+	<nav>
+		<li>
+			<a href="/">Page transition on steroïds »</a>
+			<a href="/bubblegum">Electrical ballenbak bubblegum animation »</a>
+		</li>
+	</nav>
+</header>
 
 <main>
 	<slot />
 </main>
+
+<style>
+	li {
+		margin-top: 2em;
+		display: flex;
+		gap: 2em;
+		justify-content: center;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+</style>
