@@ -1,14 +1,16 @@
 
-import { error } from '@sveltejs/kit'
-import createClient from '$lib/utils/prismicio.js'
+import { error } from '@sveltejs/kit';
+
+import createClient from '$lib/utils/prismicio';
 
 export async function load({ fetch, request }) {
-  const client = createClient({ fetch, request })
-  const documents = await client.getAllByType('story')
+    const UID = 'spanish-migrant';
+    const client = createClient({ fetch, request });
+    const document = await client.getByUID('story', UID);
 
-    if (documents) {
-        return { 
-          documents
-        }
-    } error(404, 'Not found')
+    if (document) {
+        return { document:document.data };
+    }
+
+    error(404, 'Not found');
 }

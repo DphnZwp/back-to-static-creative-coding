@@ -1,8 +1,7 @@
 <script>
   import * as prismic from '@prismicio/helpers';
 	export let data;
-  const stories = data.documents
-  console.log(stories);
+  console.log(data);
 
 	import gsap from 'gsap';
 	import {ScrollTrigger} from "gsap/dist/ScrollTrigger";    
@@ -84,12 +83,12 @@
 	<section class="story">
 		<h1 class="story__title">
 			<span>
-				{stories[0].data.title}
+				{data.document.title}
 			</span>
 		</h1>
 	
 		<article class="story__content">
-			{@html prismic.asHTML(stories[0].data.content)}
+			{@html prismic.asHTML(data.document.content)}
 	</article>
 	</section>
 </main>
