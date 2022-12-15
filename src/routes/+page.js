@@ -1,7 +1,7 @@
 
 import { error } from '@sveltejs/kit';
 
-import createClient from '$lib/utils/prismicio';
+import createClient from '$lib/prismicio';
 
 export async function load({ fetch, request }) {
     const UID = 'spanish-migrant';
