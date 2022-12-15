@@ -4,7 +4,6 @@
 
 <svelte:head>
 	<title>Page transition on steroïds</title>
-	<!-- FONTS -->
 </svelte:head>
 
 <header>
