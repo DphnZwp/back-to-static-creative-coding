@@ -1,7 +1,7 @@
 <script>
-  import * as prismic from '@prismicio/helpers';
-	export let data;
-  console.log(data);
+  // import * as prismic from '@prismicio/helpers';
+	// export let data;
+  // console.log(data);
 
 	import gsap from 'gsap';
 	import {ScrollTrigger} from "gsap/dist/ScrollTrigger";    
@@ -83,12 +83,13 @@
 	<section class="story">
 		<h1 class="story__title">
 			<span>
-				{data.document.title}
+				<!-- {data.document.title} -->
 			</span>
 		</h1>
 	
 		<article class="story__content">
-			{@html prismic.asHTML(data.document.content)}
+			<p>Casa do Fernandez is the other name of Ilojo Bar. It was assumed that the name Fernandez referred to a family of returnees from Brazil. They would have been the first owners of the property that later would be known as Ilojo Bar. There were indeed several returnees called Fernandez in Lagos' Popo Aguda – the Brazilian Quarter. But recent research has shown that this particular Fernandez was not a returnee, nor was he African. José Amoedo Fernandez was a Spaniard from the impoverished region of Galicia. In the nineteenth century, Galicia was one of the poorest regions of Spain. José Amoedo Fernandez, who was from a mountain village near Vigo, moved to Porto and possibly then to Brazil searching for greener pastures. From Brazil, some of the Gallegos followed the same trajectory as the African returnees to West Africa. No doubt Fernandez was lured by the trade possibilities. By the 1880's Lagos newspapers mention him regularly as a trader of spices and wine with a business on Tinubu Square. When he had traveled to Brazil and Portugal for a long time, a newspaper article in 1892 even welcomed him back to Lagos. The Spaniard purchased half of the plot on Tinubu Square in 1895, and ran his business Fernandez &amp; Co from there.</p>
+			<!-- {@html prismic.asHTML(data.document.content)} -->
 	</article>
 	</section>
 </main>
