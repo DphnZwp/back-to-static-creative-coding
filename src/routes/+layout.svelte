@@ -20,7 +20,7 @@
 
 <style>
 	li {
-		margin-top: 2em;
+		margin: 2em 0;
 		display: flex;
 		gap: 2em;
 		justify-content: center;
