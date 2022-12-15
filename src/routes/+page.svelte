@@ -80,22 +80,29 @@
 		});
 	});
 </script>
-
-<section class="story">
-	<h1 class="story__title">
-		<span>
-			{stories[0].data.title}
-		</span>
-	</h1>
-
-	<article class="story__content">
-		{@html prismic.asHTML(stories[0].data.content)}
-</article>
-</section>
+<main class="story-background">
+	<section class="story">
+		<h1 class="story__title">
+			<span>
+				{stories[0].data.title}
+			</span>
+		</h1>
+	
+		<article class="story__content">
+			{@html prismic.asHTML(stories[0].data.content)}
+	</article>
+	</section>
+</main>
 
 <style>
+	.story-background {
+		background-image: url('/assets/images/bg-red.webp');
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 	.story {
 		padding-top: 5em;
+		color: #fff;
 	}
 	
 	.story__title span {

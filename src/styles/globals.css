@@ -11,19 +11,14 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   font-family: 'Austral Sans Stamp Regular';
   color: var(--color-black);
   background-color: #9AD1B2;
-  padding: 0;
-  margin: 0;
-}
-
-main {
-  width: 100vw;
-  height: 100vh;
 }
 
 h1,
