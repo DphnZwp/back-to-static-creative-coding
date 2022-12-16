@@ -91,7 +91,7 @@
 				<img src="assets/images/80e15f1a-940f-4428-934e-a182a49015d0_to+let-fernandez+&+co.avif" alt="">
 			</p>
 			<p class="block-img">
-				<img src="assets/images/Cidade_do_Porto_com_a_Ponte_Pênsil,_meados_do_século_XIX-1 copy.png" alt="">
+				<img src="assets/images/Cidade_do_Porto_com_a_Ponte_Pênsil,_meados_do_século_XIX-1.png" alt="">
 			</p>
 		</article>
 	</section>
