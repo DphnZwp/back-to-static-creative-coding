@@ -15,7 +15,7 @@
 	</nav>
 </header>
 
-	<slot />
+<slot />
 
 <style>
 	li {
