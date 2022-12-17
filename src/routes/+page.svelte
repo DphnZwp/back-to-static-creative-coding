@@ -44,6 +44,7 @@
 			},
 			delay: .2,
 			x: 100,
+			ease: "back.out(1)",
 			duration: 1.25,
 		});
 
