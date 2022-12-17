@@ -30,9 +30,23 @@
 </main>
 
 <style>
-  .story-background {
+	.story-background {
 		background-image: url('/assets/images/bg-red.webp');
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+	.story {
+		padding-top: 5em;
+		color: #fff;
+	}
+	
+	.story__title span {
+    display: block;
+	}
+	.story__content {
+		padding: 3em 7em 5em 8em;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 7em;
 	}
 </style>

@@ -63,6 +63,7 @@
   justify-items: center;
   cursor: url(/assets/images/magnet.png), auto;
   overflow: hidden;
+  background-color: #9AD1B2;
 }
 
 h1 {

@@ -16,7 +16,6 @@ body {
   margin: 0;
   font-family: 'Austral Sans Stamp Regular';
   color: var(--color-white);
-  background-color: #9AD1B2;
 }
 
 h1,
@@ -37,7 +36,7 @@ h2 {
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 

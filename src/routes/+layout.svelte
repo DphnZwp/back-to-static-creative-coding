@@ -15,10 +15,11 @@
 
 <style>
 	li {
-		margin: 2em 0;
+		padding: 2em 0;
 		display: flex;
 		gap: 2em;
 		justify-content: center;
+		background-color: #9AD1B2;
 	}
 	a:hover {
 		text-decoration: underline;
