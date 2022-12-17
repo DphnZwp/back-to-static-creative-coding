@@ -2,6 +2,7 @@
 	import gsap from 'gsap';
 	import {ScrollTrigger} from "gsap/ScrollTrigger";    
 	import { onMount } from "svelte";
+
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger)
 		gsap.from("h1 span", { 
@@ -24,6 +25,7 @@
 			ease: "back.out(1)",
 			duration: 3,
 		});
+
 		gsap.from('.block-img:nth-child(3)', {
 			scrollTrigger: {
 				trigger: '.block-img:nth-child(3)',
@@ -34,6 +36,7 @@
 			ease: "back.out(1)",
 			duration: 1.25,
 		});
+
 		gsap.from('.story__content p:not(.block-img):nth-child(4)', {
 			scrollTrigger: {
 				trigger: '.story__content p:not(.block-img):nth-child(4)',
@@ -43,6 +46,7 @@
 			x: 100,
 			duration: 1.25,
 		});
+
 		gsap.from('.block-img:nth-child(5)', {
 			scrollTrigger: {
 				trigger: '.block-img:nth-child(5)',
@@ -53,6 +57,7 @@
 			ease: "back.out(1)",
 			duration: 1.25,
 		});
+		
 		gsap.from('.block-img:nth-child(6)', {
 			scrollTrigger: {
 				trigger: '.block-img:nth-child(6)',
@@ -111,6 +116,7 @@
 	.story__title span {
     display: block;
 	}
+	
 	.story__content {
 		padding: 3em 7em 5em 8em;
 		display: grid;
