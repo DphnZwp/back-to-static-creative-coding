@@ -56,7 +56,7 @@
 
 <style>
 .bubblegum {
-  padding-top: 2em;
+  padding-top: 5em;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1em;

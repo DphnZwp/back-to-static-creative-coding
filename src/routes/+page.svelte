@@ -109,8 +109,9 @@
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
+	
 	.story {
-		padding-top: 5em;
+		padding-top: 8em;
 		color: #fff;
 	}
 	
